@@ -102,16 +102,17 @@ abstract class HashTable<AnyType>{
         table.insert(i);
         System.out.println("Insertion : " + i);
         progress++;
-        if (progress % (NUMS/10) == 0){
+        if (progress % Math.max(1, NUMS/10) == 0){
           System.out.println("\t" + progress + " inserés...");
         }
     }
     long endTime = System.nanoTime();
-    //System.out.println("Taille de la table apres insertion : " + table.tableLength());
-    //System.out.println("Nombre de rehash : " + table.rehashCount());
+    System.out.println("Elements reellement inseres : " + progress);
+    System.out.println("Taille de la table apres insertion : " + table.tableLength());
+    System.out.println("Nombre de rehash : " + table.rehashCount());
     System.out.println("Temps total : " + (endTime - startTime) + " ns");
-    //System.out.println("Facteur de compression final : " + table.loadFactor());
-    //System.out.println("Nombre de collisions : " + table.collisionCount());
+    System.out.println("Facteur de compression final : " + table.loadFactor());
+    System.out.println("Nombre de collisions : " + table.collisionCount());
 
     for (int i = MATRICULE % NUMS; i != 0; i = (i + GAP) % NUMS) {
         if (!table.contains(i)) {

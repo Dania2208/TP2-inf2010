@@ -1,0 +1,27 @@
+Éléments ajoutés	Taille totale	Rehash	Temps (ns)	Facteur de charge	Collisions
+100	397	5	1567200	0,24937028	3
+300	797	6	1758900	0,37515685	29
+500	1597	7	1808900	0,31246087	6
+700	1597	7	1895800	0,43769568	21
+900	3203	8	2137700	0,28067437	72
+1000	3203	8	2253300	0,3118951	18
+3000	6421	9	2656300	0,4670612	312
+5000	12853	10	2684600	0,38893643	36
+7000	25717	11	3846500	0,2721546	521
+9000	25717	11	3511200	0,34992418	784
+10000	25717	11	3939500	0,38880897	645
+30000	102877	13	11966800	0,29160064	3416
+50000	102877	13	12164800	0,48600757	3766
+70000	205759	14	27633700	0,34019896	3147
+90000	205759	14	29977400	0,43740007	866
+100000	205759	14	31434600	0,4860006	9042
+300000	délai dépassé (> 10 min)
+500000	non mesuré (délai dépassé à une taille plus petite)
+700000	non mesuré (délai dépassé à une taille plus petite)
+900000	non mesuré (délai dépassé à une taille plus petite)
+1000000	non mesuré (délai dépassé à une taille plus petite)
+3000000	non mesuré (délai dépassé à une taille plus petite)
+5000000	non mesuré (délai dépassé à une taille plus petite)
+7000000	non mesuré (délai dépassé à une taille plus petite)
+9000000	non mesuré (délai dépassé à une taille plus petite)
+10000000	non mesuré (délai dépassé à une taille plus petite)
