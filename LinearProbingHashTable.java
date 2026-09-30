@@ -8,7 +8,7 @@
  *
 **/
 
-public class LinearProbingHashTable<AnyType> extends ProbingHashTable<AnyType>{
+public class LinearProbingHashTable<AnyType> extends ProbingHashTable<AnyType> {
     /**
      * TODO: À remplir en utilisant sondage linéaire.  Astuce : examinez le code pour la
      * methode findPos dans QuadraticProbingHashTable pour commencer.
@@ -17,11 +17,11 @@ public class LinearProbingHashTable<AnyType> extends ProbingHashTable<AnyType>{
     protected int findPos(AnyType x) {
         int currentPos = myhash(x);
 
-        while((array)[currentPos] != null && !array[currentPos].element.equals(x)){
+        while((array)[currentPos] != null && !array[currentPos].element.equals(x)) {
             currentPos++;
             collisionCounter++;
 
-            if(currentPos>= array.length){
+            if(currentPos>= array.length) {
                 currentPos-=array.length;
             }  
         }
